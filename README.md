@@ -1,48 +1,18 @@
-# Express Server with Prisma
-
-This project is a RESTful API server built with [Express.js](https://expressjs.com/) and [Prisma](https://www.prisma.io/) ORM. It manages product data with a relational database, structured using controllers, routes, and middleware for clear separation of concerns and easy maintenance.
-
 ## Table of Contents
 
-- [Project Structure](#project-structure)
 - [Setup and Installation](#setup-and-installation)
 - [Environment Variables](#environment-variables)
 - [API Endpoints](#api-endpoints)
 
 ---
 
-## Project Structure
-
-```
-project-root/
-├── prisma/                   # Prisma schema and migrations
-│   ├── migrations/           # Database migration files
-│   └── schema.prisma         # Prisma schema definition
-├── controllers/              # Contains business logic for each route
-│   └── productController.js  # Product-specific operations
-├── models/                   # Database models and connections
-│   └── prismaClient.js       # Prisma client initialization
-├── routes/                   # Route definitions for API endpoints
-│   └── productRoutes.js      # Routes for product API
-├── middlewares/              # Custom middleware functions
-│   └── errorHandler.js       # Error-handling middleware
-├── server.js                 # Main application entry point
-└── package.json              # Dependencies and scripts
-```
-
-- **`controllers/`**: Contains controller functions to handle business logic for each route.
-- **`models/`**: Houses Prisma client initialization to interact with the database.
-- **`routes/`**: Defines route paths and links them to controller functions.
-- **`middlewares/`**: Holds reusable middleware, like error handling.
-- **`server.js`**: Initializes the Express app, applies middleware, sets up routes, and starts the server.
-
 ## Setup and Installation
 
 ### Prerequisites
 
-- Node.js (v14 or later)
-- PostgreSQL or other Prisma-supported database
-- Prisma CLI: `npm install -g prisma`
+- Node.js
+- PostgreSQL
+- Prisma
 
 ### Installation
 
@@ -88,12 +58,6 @@ project-root/
 Ensure the following variables are defined in a `.env` file:
 
 - **`DATABASE_URL`**: Connection string for the database.
-
-Example:
-
-```plaintext
-DATABASE_URL="postgresql://username:password@localhost:5432/dbname?schema=public"
-```
 
 ---
 
