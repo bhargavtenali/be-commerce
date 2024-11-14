@@ -20,7 +20,6 @@
 
    ```bash
    git clone https://github.com/bhargavtenali/be-commerce.git
-   cd project-root
    ```
 
 2. **Install dependencies:**
