@@ -10,7 +10,7 @@
 
 ### Prerequisites
 
-- Node.js (v14 or later)
+- Node.js
 - PostgreSQL
 - Prisma
 
@@ -58,12 +58,6 @@
 Ensure the following variables are defined in a `.env` file:
 
 - **`DATABASE_URL`**: Connection string for the database.
-
-Example:
-
-```plaintext
-DATABASE_URL="postgresql://username:password@localhost:5432/dbname?schema=public"
-```
 
 ---
 
